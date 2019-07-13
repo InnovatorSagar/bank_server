@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { verifyToken } = require('../middlewares/auth');
 const client = require('../databaseHelper/postgresHelper').dbClient;
-router.get('/allbanks',verifyToken,(req,res)=>{
+router.post('/allbanks',verifyToken,(req,res)=>{
   const offset = parseInt(req.query.offset)||0;
   var limit = parseInt(req.query.limit);
   let query = '';
@@ -23,7 +23,7 @@ router.get('/allbanks',verifyToken,(req,res)=>{
   })
 })
 
-router.get('/allbranches',verifyToken,(req,res)=>{
+router.post('/allbranches',verifyToken,(req,res)=>{
   const offset = parseInt(req.query.offset)||0;
   var limit = parseInt(req.query.limit);
   let query = '';
