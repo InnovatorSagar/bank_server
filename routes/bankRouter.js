@@ -17,9 +17,9 @@ router.get('/allbanks',verifyToken,(req,res)=>{
   };
 
   client.query(query,(err,r)=>{
-    if(err) res.status(401).send(err);
+    if(err) return res.status(401).send(err);
     //Check for no banks found would be better on front end side
-    res.json(r.rows);
+    return res.json(r.rows);
   })
 })
 
@@ -37,9 +37,9 @@ router.get('/allbranches',verifyToken,(req,res)=>{
     values:[req.body.city,req.body.bank_name,offset,limit]
   };
   client.query(query,(err,r)=>{
-    if(err) res.status(401).send(err);
+    if(err) return res.status(401).send(err);
     //Checks for no branches found would be better on front end side
-    res.json(r.rows);
+    return res.json(r.rows);
   })
 })
 
