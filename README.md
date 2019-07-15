@@ -1,4 +1,16 @@
 # bank_server <br/>
+
+##To run the curl script on your local machine, please follow the steps:
+
+1. Download bank_script.sh file from the above github repo.
+2. Go to the directory where bank_script.sh file is downloaded.
+2. Open terminal in that dierctory itself
+3. run : chmod +x bank.sh
+4. run : ./bank_script.sh
+5. Compare the reponses with below mentioned curl responses.
+
+
+
 #API to create user <br/>
 #table users have fields (username,password) <br/>
 CURL SCRIPTS : <br/>
