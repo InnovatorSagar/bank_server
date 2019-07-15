@@ -11,12 +11,12 @@ CURL SCRIPTS : <br/>
 <br/>
 <br/>
 #Fair credentials
-<br/>2. curl --header "Content-Type: application/json" -d "{\\"username\\":\\"donny@albert.com\\",\\"password\\":\\"adin\\"}" https://bank-server-detail.herokuapp.com/api/user/register
+<br/>2. curl --header "Content-Type: application/json" -d "{\\"username\\":\\"donny@alb.com\\",\\"password\\":\\"adin\\"}" https://bank-server-detail.herokuapp.com/api/user/register
 <br/> -> Response : "User created"
 <br/>
 <br/>
 #Again trying with same credentials
-<br/>3. curl --header "Content-Type: application/json" -d "{\\"username\\":\\"donny@albert.com\\",\\"password\\":\\"adin\\"}" https://bank-server-detail.herokuapp.com/api/user/register
+<br/>3. curl --header "Content-Type: application/json" -d "{\\"username\\":\\"donny@alb.com\\",\\"password\\":\\"adin\\"}" https://bank-server-detail.herokuapp.com/api/user/register
 <br/>-> Response : {"message":"User already exists"}
 <br/>
 <br/>
