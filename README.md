@@ -5,7 +5,7 @@
 1. Download bank_script.sh file from the above github repo.
 2. Go to the directory where bank_script.sh file is downloaded.
 2. Open terminal in that dierctory itself
-3. run : chmod +x bank.sh
+3. run : chmod +x bank_script.sh
 4. run : ./bank_script.sh
 5. Compare the reponses with below mentioned curl responses.
 
@@ -23,12 +23,12 @@ CURL SCRIPTS : <br/>
 <br/>
 <br/>
 #Fair credentials
-<br/>2. curl --header "Content-Type: application/json" -d "{\\"username\\":\\"donny@alb.com\\",\\"password\\":\\"adin\\"}" https://bank-server-detail.herokuapp.com/api/user/register
+<br/>2. curl --header "Content-Type: application/json" -d "{\\"username\\":\\"dony@alb.com\\",\\"password\\":\\"adin\\"}" https://bank-server-detail.herokuapp.com/api/user/register
 <br/> -> Response : "User created"
 <br/>
 <br/>
 #Again trying with same credentials
-<br/>3. curl --header "Content-Type: application/json" -d "{\\"username\\":\\"donny@alb.com\\",\\"password\\":\\"adin\\"}" https://bank-server-detail.herokuapp.com/api/user/register
+<br/>3. curl --header "Content-Type: application/json" -d "{\\"username\\":\\"dony@alb.com\\",\\"password\\":\\"adin\\"}" https://bank-server-detail.herokuapp.com/api/user/register
 <br/>-> Response : {"message":"User already exists"}
 <br/>
 <br/>
