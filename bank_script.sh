@@ -1,9 +1,9 @@
 #!/bin/bash
 curl --header "Content-Type: application/json" -d "{\"username\":\"donyyalbert.com\",\"password\":\"adin\"}" https://bank-server-detail.herokuapp.com/api/user/register 
 echo ""
-curl --header "Content-Type: application/json" -d "{\"username\":\"donny@alb.com\",\"password\":\"adin\"}" https://bank-server-detail.herokuapp.com/api/user/register 
+curl --header "Content-Type: application/json" -d "{\"username\":\"donn@alb.com\",\"password\":\"adin\"}" https://bank-server-detail.herokuapp.com/api/user/register 
 echo ""
-curl --header "Content-Type: application/json" -d "{\"username\":\"donny@alb.com\",\"password\":\"adin\"}" https://bank-server-detail.herokuapp.com/api/user/register 
+curl --header "Content-Type: application/json" -d "{\"username\":\"donn@alb.com\",\"password\":\"adin\"}" https://bank-server-detail.herokuapp.com/api/user/register 
 echo ""
 curl --header "Content-Type: application/json" -d "{\"username\":\"donyyalbert.com\",\"password\":\"adin\"}" https://bank-server-detail.herokuapp.com/api/user/login 
 echo ""
